@@ -1,0 +1,121 @@
+// main: MyBeyond.less
+@import "variables.less";
+
+.my-beyond {
+    #chat-log {
+        .message {
+            background: @color-bg-body;
+            font-family: @font-default;
+            padding: 0;
+            margin: 6px;
+            position: relative;
+            border: none;
+            border-radius: 0;
+    
+            .chat-card {
+                .card-header {
+                    border: none;
+
+                    h3 {
+                        color: inherit;
+                        font-family: @font-condensed;
+                        font-weight: normal;
+                    }
+                }
+
+                .card-footer {
+                    border-top: 1px solid @color-border;
+                    margin-top: 6px;
+                }
+            }
+
+            .dice-roll {
+                .dice-total, .dice-formula {
+                    border: none;
+                    box-shadow: none;
+                    border-radius: 0;
+                    background-color: @color-bg-body-darker;
+                    color: @color-text-default;
+
+                    &.success {
+                        color: @color-success;
+                    }
+
+                    &.failure {
+                        color: @color-danger;
+                    }
+                }
+            }
+
+            .red-dual .dice-row {
+                .dice-row-item:not(:last-child) {
+                    margin-right: 2px;
+                }
+                .dice-row-item:not(:first-child) {
+                    margin-left: 2px;
+                }
+            }
+    
+            .message-header {
+                padding: 3px 6px;
+                color: #fff;
+                background-color: @color-bg-header-light;
+
+                .message-sender {
+                    text-shadow: 1px 1px 5px @color-bg-window-header;
+                }
+
+                .flavor-text {
+                    font-style: italic;
+                }
+            }
+    
+            .message-content {
+                max-height: 540px;
+                overflow-y: auto;
+                text-align: justify;
+                padding: 6px;
+            }
+    
+            &.whisper {
+                background: @color-bg-header-lightest;
+                color: #fff;
+
+                .message-header {
+                    padding: 3px 6px;
+
+                    .whisper-to {
+                        color: @color-text-muted;
+                    }
+                }
+            }
+        }
+    }
+    #chat-controls {
+        padding: 3px 6px;
+        margin: 0;
+        border-top: 1px solid @color-primary;
+
+        div.roll-type-select select {
+            background: @color-bg-header-lighter;
+            color: #fff;
+            border: none;
+        }
+    }
+
+    #chat-form {
+        margin: 3px 6px;
+    
+        textarea {
+            background: @color-bg-header-lighter;
+            color: #fff;
+            border: none;
+            outline: none;
+    
+            &:focus {
+                outline: none;
+                box-shadow: none;
+            }
+        }
+    }
+}

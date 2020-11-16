@@ -1,0 +1,395 @@
+// main: MyBeyond.less
+@import "variables.less";
+
+body.my-beyond {
+
+    button, .dialog .dialog-buttons button {
+        background-color: @color-bg-header-light;
+        color: @color-text-light;
+        border-radius: 0;
+        border: none;
+        box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+        cursor: pointer;
+
+        &:hover {
+            background-color: @color-bg-header-lighter;
+        }
+    }
+
+    input, select {
+        border-radius: 0;
+    }
+
+    h2 {
+        border-bottom-color: @color-primary;
+        padding: 0 6px;
+    }
+
+    .app {
+        background-color: @color-bg-header;
+        border-radius: 3px;
+    }
+
+    .window-app {
+
+        .window-header {
+            background: @color-bg-window-header;
+            border-bottom: 1px solid @color-theme;
+            color: @color-text-light;
+    
+            .window-title {
+                font-weight: bold;
+            }
+        }
+
+        .window-content {
+            background: url(../../../ui/denim075.png) repeat;
+            background-color: @color-bg-header;
+            color: @color-text-light;
+
+            hr {
+                display: none;
+            }
+
+            header.form-header {
+                border: none;
+            }
+
+            header.form-header h3, h3.form-header {
+                border-bottom: 1px solid @color-primary;
+                padding: 3px 6px;
+                margin: 12px 0 6px;
+                color: @color-text-light;
+                border-top: none;
+            }
+
+            .form-group {
+                padding: 3px 6px;
+                align-items: center;
+            }
+
+            label {
+                color: @color-text-light;
+
+                .units {
+                    color: @color-text-muted;
+                }
+            }
+            input[type="text"], input[type="number"], select, textarea {
+                background-color: @color-bg-header-lighter;
+                color: @color-text-light;
+                border: none;
+            }
+            ::placeholder {
+                color: @color-text-muted;
+            }
+
+            .notes {
+                color: @color-text-muted;
+            }
+        }
+
+        .window-resizable-handle {
+            background: @color-bg-window-header;
+            border: none;
+            color: @color-text-light;
+        }
+    }
+
+    .directory-header, .directory-footer, #combat-round, #combat-controls {
+        background-color: @color-bg-header;
+    }
+
+    .directory-footer, .directory-header {
+        margin: 0;
+        padding: 6px;
+        border: none;
+    }
+
+    .directory-list {
+        .directory-item {
+            margin: 3px 6px;
+
+            &.folder {
+
+                .folder-header {
+                    border-bottom: none;
+                    border-top: none;
+                }
+
+                &[data-folder-depth='1'] {
+                    background-color: @color-bg-header-lighter;
+
+                    .folder-header {
+                        background-color: @color-bg-header-light;
+                    }
+                }
+
+                &[data-folder-depth='2'] {
+                    background-color: @color-bg-header-light;
+
+                    .folder-header {
+                        background-color: @color-bg-header;
+                    }
+                }
+
+                &[data-folder-depth='3'] {
+                    background-color: @color-bg-header;
+
+                    .folder-header {
+                        background-color: @color-bg-window-header
+                    }
+                }
+
+            }
+
+            &.entity, &.actor, &.item {
+                background-color: @color-bg-body-darker;
+                color: @color-text-default;
+                border-top: none;
+                border-bottom: none;
+
+                img {
+                    padding: 3px;
+                    margin: 0;
+                }
+
+                .entity-name {
+                    padding-left: 6px;
+                }
+            }
+
+            &.scene {
+                color: @color-text-light;
+            }
+        }
+
+        .subdirectory {
+            border: none !important;
+            padding-bottom: 3px;
+
+            .folder {
+                border: none;
+                margin-right: 0;
+            }
+        }
+    }
+
+    .sheet.scene-sheet {
+        form {
+            max-height: calc(100vh - 132px);
+            overflow-y: scroll;
+            overflow-x: hidden;
+            margin-bottom: 32px;
+        }
+
+        button[type="submit"] {
+            position: absolute;
+            bottom: 5px;
+            left: 5px;
+            right: 5px;
+            width: calc(100% - 10px);
+        }
+    }
+
+    #combat {
+        li.combatant {
+
+            .token-initiative {
+                min-width: 54px;
+            }
+
+            .token-name, .initiative  {
+                text-shadow: none;
+                color: @color-text-default;
+            }
+
+            &:hover, &.hover {
+                background-color: @color-bg-body-dark;
+            }
+
+            &.active {
+                background-color: @color-primary;
+
+                .token-name, .initiative  {
+                    color: @color-text-light;
+                }
+
+                &:hover, &.hover {
+                    background-color: @color-primary-light;
+                }
+            }
+
+            .combatant-control {
+                text-align: center;
+                padding: 0 3px;
+                margin: 0 3px;
+                color: @color-text-light;
+
+                &.active {
+                    background-color: @color-bg-header;
+                }
+            }
+
+            .token-effects {
+                .token-effect {
+                    margin: 0;
+                    height: 20px;
+                    width: 20px;
+                    background-color: @color-bg-header;
+                }
+            }
+
+            &.defeated {
+                background-color: @color-bg-header-lighter;
+                opacity: 0.5;
+
+                &:hover, &.hover {
+                    background-color: @color-bg-header-lightest;
+                }
+
+                &.active {
+                    background-color: @color-primary;
+
+                    &:hover, &.hover {
+                        background-color: @color-primary-light;
+                    }
+                }
+
+                img {
+                    transform: none;
+                    opacity: 1;
+                }
+
+            }
+        }
+    }
+
+    #controls {
+        .scene-control {
+            background-color: @color-bg-window-header;
+        }
+        .control-tool {
+            background-color: @color-bg-header;
+        }
+        .scene-control, .control-tool {
+            box-shadow: none;
+            color: @color-text-light;
+            border-radius: 3px;
+            border: 1px solid transparent;
+
+            &.active {
+                background-color: @color-primary-dark;
+                border-color: @color-text-light;
+            }
+        }
+
+    }
+
+    #sidebar {
+
+        #sidebar-tabs {
+            background: @color-bg-window-header;
+            border-bottom: 1px solid @color-theme;
+            color: @color-text-light;
+            box-shadow: none;
+            margin: 0;
+
+            & > .item.active {
+                box-shadow: none;
+                border-color: @color-theme;
+            }
+        }
+
+    }
+
+    #navigation {
+        #scene-list {
+            .scene {
+                background: @color-bg-window-header;
+                border-color: transparent;
+                
+    
+                &.gm {
+                    background: @color-bg-header;
+                    border-color: transparent;
+                }
+    
+                &.view, &.context {
+                    box-shadow: none;
+                    border-color: transparent;
+                    border-bottom: 1px solid @color-theme;
+                }
+            }
+    
+        }
+    }
+
+    #players {
+        h3 {
+            background-color: @color-bg-window-header;
+            border-bottom: 1px solid @color-theme;
+            margin: 0 0 3px;
+        }
+    }
+
+    #playlists {
+        li.playlist {
+            padding: 0;
+
+            .sound-control {
+                color: @color-text-default;
+            }
+
+            .playlist-header {
+                background-color: @color-bg-header-light;
+                padding: 6px;
+                color: @color-text-light;
+                text-decoration: none;
+
+                .sound-control {
+                    color: @color-text-light;
+                }
+            }
+
+            .playlist-sounds {
+                .sound {
+                    padding: 3px 6px;
+                    margin: 3px 0;
+                }
+            }
+        }
+    }
+
+    #settings {
+        padding: 8px;
+    }
+
+    #module-management {
+        .package-list {
+            .package-title {
+                color: @color-text-light;
+            }
+            .package-metadata, .package-description {
+                color: @color-text-muted;
+            }
+        }
+    }
+
+    #player-config {
+        label {
+            color: @color-text-light;
+        }
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: @color-theme;
+        border: @color-theme;
+        border-radius: 1px;
+    }
+    ::-webkit-scrollbar-track {
+        background-color: @color-bg-header;
+        border-radius: 1px;
+    }
+
+}

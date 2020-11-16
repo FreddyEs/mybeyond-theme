@@ -1,0 +1,793 @@
+.dnd5e.sheet.actor.character.my-beyond {
+  min-width: 860px;
+  min-height: 860px;
+}
+.dnd5e.sheet.actor.character.my-beyond * {
+  text-shadow: none;
+  box-shadow: none;
+}
+.dnd5e.sheet.actor.character.my-beyond input {
+  box-shadow: none;
+  border-color: transparent;
+}
+.dnd5e.sheet.actor.character.my-beyond input:hover,
+.dnd5e.sheet.actor.character.my-beyond input:focus {
+  border-color: #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond .window-header {
+  border-bottom: 1px solid #c53131 !important;
+  background: #090809;
+}
+.dnd5e.sheet.actor.character.my-beyond .window-content {
+  position: relative;
+  background: none;
+  background-color: #f8f8f8;
+  padding: 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .window-resizable-handle {
+  background: #090809;
+  border: none;
+  color: #d2d2d2;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header {
+  background-color: #26282a;
+  position: relative;
+  border: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header img.profile {
+  border: 1px #c53131 solid;
+  border-radius: 5px;
+  height: 95px;
+  max-width: 95px;
+  margin: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details {
+  margin-right: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .charname {
+  height: auto;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .charname input {
+  color: #fff;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: 28px;
+  margin: 0;
+  height: auto;
+  line-height: 1.2;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp {
+  font-family: Roboto, Helvetica, sans-serif;
+  flex: 0 0 100%;
+  justify-content: flex-start;
+  text-align: left;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .charlevel {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 4px;
+  order: 2;
+  color: #838383;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .experience {
+  font-size: 10px;
+  order: 3;
+  position: absolute;
+  width: 335px;
+  margin: 0 4px;
+  justify-content: flex-end;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .experience input {
+  text-align: right;
+  color: #fff;
+  flex: 0 0 75px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .experience .max {
+  color: #838383;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .xpbar {
+  order: 1;
+  margin-bottom: 0;
+  width: 335px;
+  border: none;
+  flex: 0 0 2px;
+  margin: 0 4px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .header-exp .xpbar .bar {
+  background: #c53131;
+  height: 2px;
+  margin: 0;
+  border: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary {
+  border: none;
+  padding-right: 290px;
+  position: absolute;
+  top: 72px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary li {
+  border: none;
+  flex: auto;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary li input,
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary li input::placeholder {
+  color: #838383;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary li:nth-child(1) {
+  position: absolute;
+  top: -17px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header .header-details .summary li.proficiency {
+  color: #fff;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-navigation {
+  position: absolute;
+  top: 215px;
+  left: 260px;
+  z-index: 4;
+  right: 10px;
+  padding: 0 24px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-navigation .item {
+  line-height: 1.4;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  color: #838383;
+  font-size: 12px;
+  padding: 0;
+  height: 19px;
+  border-bottom-color: transparent;
+  margin: 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-navigation .item:hover {
+  color: #000;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-navigation .item.active {
+  border-bottom-color: #c53131;
+  color: #000;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-body {
+  padding-left: 250px;
+  padding-top: 90px;
+  position: relative;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab:not(.attributes),
+.dnd5e.sheet.actor.character.my-beyond .center-pane {
+  height: calc(100% - 5px);
+  overflow-y: auto;
+  padding: 45px 20px 5px;
+  background-color: white;
+  border: 1px solid #c53131;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes {
+  display: block !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane {
+  margin-left: 250px;
+  margin-top: 90px;
+  height: calc(100% - 95px);
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .counters {
+  display: flex;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .counters .counter {
+  flex: 1;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .counters .counter.death-saves {
+  flex: 2;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits {
+  padding: 10px 0;
+  overflow-y: auto;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group {
+  justify-content: flex-start;
+  margin-right: 10px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group label {
+  color: #838383;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  flex: 1 0 400px;
+  order: 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .traits-list {
+  order: 2;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .traits-list li {
+  border: none;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  background: transparent;
+  padding: 0;
+  margin: 0;
+  font-size: 13px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .traits-list li:not(:last-child)::after {
+  content: ', ';
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .trait-selector,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .configure-flags,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group select {
+  order: 1;
+  text-align: right;
+  flex: 1;
+  padding-right: 15px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .trait-selector:hover,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .configure-flags:hover,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group select:hover {
+  text-shadow: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .trait-selector i.fas,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .configure-flags i.fas,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group select i.fas {
+  float: none;
+  color: #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .trait-selector i.fas:hover,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .configure-flags i.fas:hover,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group select i.fas:hover {
+  color: #9c2727;
+  text-shadow: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group input,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group .traits-list {
+  text-align: left;
+  flex: 100%;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane .traits .form-group + .form-group {
+  border-top: 1px solid #d8d8d8;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes .center-pane,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes ul.skills-list,
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes ul.ability-scores {
+  pointer-events: initial;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.attributes:not(.active) .center-pane {
+  display: none;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list {
+  position: absolute;
+  left: 0;
+  top: 85px;
+  padding: 40px 20px 80px !important;
+  color: #000;
+  border: 1px #c53131 solid;
+  border-radius: 5px;
+  background-color: white;
+  width: 239px;
+  height: 630px;
+  margin: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list::after {
+  content: 'Skills';
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  line-height: 1.4;
+  color: #000;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill {
+  height: 30px !important;
+  padding: 0;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:nth-child(even) {
+  background: none;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-proficiency::before,
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-ability::before,
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-name::before,
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-mod::before {
+  line-height: 1.4;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #838383;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: 10px;
+  position: absolute;
+  top: 20px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-proficiency::before {
+  left: 18px;
+  content: 'Prof';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-ability::before {
+  left: 50px;
+  content: 'Mod';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-name::before {
+  left: 90px;
+  content: 'Skill';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill:first-child .skill-mod::before {
+  left: 190px;
+  content: 'Bonus';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-proficiency {
+  order: 1;
+  flex: 0 0 30px !important;
+  padding: 5px 2px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-ability {
+  order: 2;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #838383;
+  flex: 0 0 40px !important;
+  padding: 5px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-name {
+  order: 3;
+  border-bottom: 1px solid #d8d8d8;
+  padding: 5px 0;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-name:hover {
+  color: #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-mod {
+  order: 4;
+  font-weight: 700;
+  padding: 5px 0;
+  border-bottom: 1px solid #d8d8d8;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.skills-list li.skill .skill-passive {
+  display: none;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores {
+  position: absolute;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  height: auto;
+  border: none;
+  margin-top: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability {
+  height: 78px;
+  border: none;
+  flex: 0 0 66px;
+  position: relative;
+  margin: 0 1px 0 2px;
+  z-index: 1;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-name {
+  color: transparent !important;
+  position: absolute;
+  border-bottom: none !important;
+  max-width: 50px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers {
+  margin-top: 26px;
+  padding-left: 4px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-mod,
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-save {
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 18px;
+  border: none;
+  flex: 0 0 29px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-save {
+  border-left: 1px solid #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-mod::first-letter,
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-save::first-letter {
+  color: #838383;
+  font-size: 12px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-modifiers .ability-proficiency {
+  position: absolute;
+  top: 1px;
+  left: 12px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability .ability-score {
+  line-height: 1.4;
+  font-family: Roboto, Helvetica, sans-serif;
+  color: #000;
+  text-align: center;
+  position: absolute;
+  font-weight: 700;
+  left: 0;
+  right: 0;
+  font-size: 16px;
+  bottom: -1px;
+  height: auto;
+  border: 1px #c53131 solid;
+  border-radius: 50%;
+  background-color: white;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability::after {
+  content: ' ';
+  background-color: white;
+  top: 0;
+  bottom: 11px;
+  right: 3px;
+  left: 3px;
+  position: absolute;
+  z-index: -1;
+  border: 1px #c53131 solid;
+  border-radius: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability::before {
+  line-height: 1.4;
+  text-align: center;
+  color: #838383;
+  text-transform: uppercase;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+  right: 0;
+  top: 8px;
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=str]::before {
+  content: 'Str';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=dex]::before {
+  content: 'Dex';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=con]::before {
+  content: 'Con';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=int]::before {
+  content: 'Int';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=wis]::before {
+  content: 'Wis';
+}
+.dnd5e.sheet.actor.character.my-beyond ul.ability-scores li.ability[data-ability=cha]::before {
+  content: 'Cha';
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 1;
+  margin-top: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute {
+  border: none;
+  position: relative;
+  color: #242527;
+  border: 1px solid #c53131;
+  background-color: white;
+  border-radius: 5px;
+  height: 78px;
+  flex: 0 0 69px;
+  margin: 0 4px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute .attribute-name {
+  border: none;
+  line-height: 1;
+  color: #838383;
+  text-transform: uppercase;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 0;
+  white-space: normal;
+  height: 28px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute .attribute-value {
+  margin-top: 0;
+  font-size: 22px;
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute .attribute-footer {
+  font-family: Roboto, Helvetica, sans-serif;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(1) {
+  flex: 0 0 122px;
+  order: 4;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(1) .attribute-name,
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(1) .attribute-value,
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(1) .attribute-footer {
+  width: 122px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(1) .attribute-value.multiple input {
+  flex: 0 0 40%;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) {
+  order: 5;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer {
+  position: absolute;
+  top: -40px;
+  right: -10px;
+  display: block;
+  width: 290px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a {
+  display: inline-block;
+  border: 1px solid #c53131;
+  border-radius: 3px;
+  padding: 5px 13px 5px 35px;
+  color: transparent;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Roboto, Helvetica, sans-serif;
+  white-space: nowrap;
+  width: calc(50% - 14px);
+  position: relative;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.rest::before {
+  content: '';
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: 17px;
+  top: 6px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.rest::after {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 5px 13px 5px 35px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.short-rest::before {
+  background: no-repeat url(https://www.dndbeyond.com/Content/Skins/Waterdeep/images/icons/menu_items/shortrest.svg);
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.short-rest::after {
+  content: 'Short Rest';
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.long-rest::before {
+  background: no-repeat url(https://www.dndbeyond.com/Content/Skins/Waterdeep/images/icons/menu_items/longrest.svg);
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a.long-rest::after {
+  content: 'Long Rest';
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-footer a:hover {
+  text-shadow: none;
+  background-color: #111;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(2) .attribute-value {
+  letter-spacing: -2px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(3) .attribute-value {
+  z-index: 2;
+  order: 1;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(3) .attribute-footer {
+  position: absolute;
+  bottom: 3px;
+  width: 67px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(4) {
+  order: 2;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(4) .attribute-footer {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 69px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(5) {
+  order: 3;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(5) .attribute-footer {
+  color: #838383;
+  font-size: 12px;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(5) .attribute-footer::before {
+  content: 'Mod';
+  padding: 5px;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(5) .attribute-footer span {
+  display: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .sheet-header ul.attributes li.attribute:nth-child(5) .attribute-footer input {
+  color: #838383;
+  font-size: 12px;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination {
+  content: ' ';
+  height: 21px;
+  width: 21px;
+  color: transparent;
+  background: url(https://www.dndbeyond.com/Content/Skins/Waterdeep/images/sprites/currency-sprite.png) no-repeat;
+  background-size: auto 21px;
+  margin-right: 8px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination.pp {
+  background-position: 0 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination.gp {
+  background-position: -22px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination.ep {
+  background-position: -43px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination.sp {
+  background-position: -64px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency .denomination.cp {
+  background-position: -86px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency input {
+  box-sizing: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+  line-height: normal;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  background-color: #fff;
+  background: #fff none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  color: #000;
+  padding: 4px;
+  transition: 0.2s linear border, 0.2s linear box-shadow;
+  width: 100%;
+  text-align: center;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .currency h3 {
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  font-size: 12px;
+  color: #838383;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: auto;
+  text-align: right;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab.inventory .encumbrance .encumbrance-bar {
+  background: #c53131;
+  border-color: #9c2727;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list {
+  max-width: none;
+  flex: 0 0 100%;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list .filter-title {
+  display: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list .filter-item {
+  flex-grow: 0;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  cursor: pointer;
+  color: #838383;
+  line-height: 1;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  margin: 3px 4px 3px 0;
+  border-radius: 3px;
+  padding: 5px 7px;
+  white-space: nowrap;
+  border-bottom: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list .filter-item:hover {
+  text-shadow: none;
+  background-color: #5d5d5d;
+  color: #f2f2f2;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list .filter-item.active {
+  color: #fff;
+  background-color: #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .filter-list .filter-item.active:hover {
+  background-color: #9c2727;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header {
+  border-color: transparent;
+  border-bottom: 1px solid #eaeaea;
+  background: none;
+  margin-bottom: 10px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header:not(:first-child) {
+  margin-top: 25px;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header h3,
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header div {
+  line-height: 1.4;
+  color: #000;
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+  width: 140px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  padding: 5px 0;
+  border-color: transparent;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header .item-name,
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .items-header .item-name h3 {
+  font-size: 13px;
+  color: #c53131;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item {
+  border-bottom: transparent;
+  padding: 5px 0;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item > div {
+  border-color: transparent;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item .item-image {
+  background-repeat: no-repeat;
+  border: 1px solid #c53131;
+  border-radius: 3px;
+  background-size: cover;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item .item-image:hover {
+  background-image: url(/icons/svg/d20-highlight.svg) !important;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item .item-name h4 {
+  font-size: 12px;
+  text-overflow: ellipsis;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item .item-summary {
+  border: none;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item .spell-comps {
+  flex: 0 0 auto;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-list .item + .item {
+  border-top: 1px dotted #eaeaea;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-control:not(.item-toggle),
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-control.item-toggle.active {
+  color: #c53131;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .items-list .item-control:hover {
+  text-shadow: none;
+  color: #9c2727;
+}
+.dnd5e.sheet.actor.character.my-beyond .tab .magic-items-head h3 {
+  margin: 25px 0 -25px -5px;
+  font-size: 12px;
+  color: #838383;
+  line-height: 1.4;
+  outline: 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: Roboto Condensed, Roboto, Helvetica, sans-serif;
+  padding: 5px 0;
+  border-color: transparent;
+}
+.dnd5e.sheet.actor.character.my-beyond #ddbImportButton {
+  order: 2;
+}
