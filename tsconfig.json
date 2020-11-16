@@ -1,0 +1,19 @@
+{
+    "compileOnSave": true,
+    "compilerOptions": {
+        "outFile": "./dist/js/MyBeyond.js",
+        "module": "system",
+        "moduleResolution": "Node",
+        "lib": [ "ES2017", "dom", "ES2019.Array" ],
+        "target": "es6",
+        "noImplicitAny": true,
+        "noImplicitReturns": true
+    },
+    "exclude": [
+        "./node_modules/**/*"
+    ],
+    "include": [
+        "./node_modules/@types/**/*",
+        "./typescript/**/*"
+    ]
+}

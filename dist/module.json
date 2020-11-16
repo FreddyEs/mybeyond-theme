@@ -16,7 +16,7 @@
         "dnd5e"
     ],
     "scripts": [
-        "./js/MyBeyond.js"
+        "./js/MyBeyond.min.js"
     ],
     "styles": [
         "./css/MyBeyond.css"
