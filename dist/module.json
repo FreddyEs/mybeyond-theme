@@ -1,0 +1,27 @@
+{
+    "name": "mybeyond-theme",
+    "title": "MyBeyond - D&D 5e Character Sheet Theme",
+    "description": "Style your Character Sheet like your DnDBeyond.",
+    "version": "1.4.0",
+    "minimumCoreVersion": "0.7.6",
+    "compatibleCoreVersion": "0.7.7",
+    "author": "Frederik Eschmann (Aylas#4838)",
+    "authors": [
+		{
+			"name": "Frederik Eschmann",
+			"url": "https://fvtt-modules.eschmann.online"
+		}
+	],
+    "systems": [
+        "dnd5e"
+    ],
+    "scripts": [
+        "./js/MyBeyond.js"
+    ],
+    "styles": [
+        "./css/MyBeyond.css"
+    ],
+    "url": "https://fvtt-modules.eschmann.online/",
+    "manifest": "https://fvtt-modules.eschmann.online/mybeyond-theme/module.json",
+    "download": "https://fvtt-modules.eschmann.online/mybeyond-theme/mybeyond-theme_v1.4.0.zip"
+}
